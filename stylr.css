@@ -279,11 +279,13 @@ nav {
 
 /* ============FOOTER============== */
 .footer-container {
+  /* display: flex; */
+  /* justify-content: space-evenly; */
   display: grid;
   padding: 5%;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 /* Links */
@@ -335,25 +337,29 @@ footer {
 .newsletter-box button {
   padding: 10px 18px;
   border: none;
-  background: #0d6efd;
+  background: orange;
   color: white;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .newsletter-box button:hover {
-  background: #0b5ed7;
+  background: rgb(232, 232, 4);
 }
 
 /* Bottom Bar */
 .footer-bottom {
   border-top: 1px solid #ddd;
-  margin-top: 40px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
+  /* margin-top: 40px; */
+  /* padding-top: 20px; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+.footer-bottom p span{
+  color: orange;
 }
 
 .social-icons span {
@@ -363,12 +369,12 @@ footer {
 }
 
 /* ==========RESPONSIVE============== */
-@media (max-width: 1000px) {
+@media (max-width: 968px) {
   .hero h1 {
     font-size: 40px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 968px) {
   .menu-toggle {
     display: block;
     padding: 0px 3%;
@@ -411,7 +417,7 @@ footer {
 }
 /* ==========FOOTER=========== */
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 828px) {
   .footer-container {
     grid-template-columns: 1fr;
   }
