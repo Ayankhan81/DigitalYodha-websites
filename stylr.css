@@ -5,7 +5,40 @@
   font-family: "Poppins", sans-serif;
 }
 
+.side-icon {
+  position: fixed;
+  right: 0px;
+  top: 25%;
+  background-color: #b7b7b7;
+  padding: 1%;
+  border-radius: 10px 0 0 10px;
+  display: none;
+}
+
+.icon-twitter{
+  color: black;
+  transition: 0.3s ease;
+}
+
+.icon-linkedin{
+  color: darkblue;
+}
+.icon-instagram{
+  color: rgba(210, 95, 13, 0.793);
+  transition: 0.3s ease;
+}
+
+.side-icon div {
+  padding: 3px;
+  /* gap: 50px; */
+  /* margin-bottom: 20px; */
+}
+.side-icon div{
+  font-size: 20px;
+}
+
 body {
+  height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./assests/background\ photo.avif");
@@ -28,6 +61,7 @@ nav {
 }
 
 .logo {
+  color: white;
   font-size: 22px;
   font-weight: 700;
 }
@@ -36,7 +70,7 @@ nav {
   color: #ffb400;
 }
 
-.nav-links {
+/* .nav-links {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +80,17 @@ nav {
 }
 .nav-links.active {
   max-height: 400px;
+} */
+
+.nav-links {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
 }
+.nav-links.active {
+  max-height: 400px;
+}
+
 
 .nav-links a {
   text-decoration: none;

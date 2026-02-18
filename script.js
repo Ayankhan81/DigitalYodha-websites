@@ -10,3 +10,19 @@ menuToggle.onclick = function () {
     menuToggle.innerHTML = "☰";
   }
 };
+const sideIcon=document.querySelector(".side-icon");
+let timer;
+window.addEventListener("scroll",function(){
+  sideIcon.style.display="block";
+  clearTimeout(timer);
+  timer=setTimeout(function(){
+    sideIcon.style.display="none";
+  },1000);
+})
+window.addEventListener("mousemove",function(){
+  sideIcon.style.display="block";
+  clearTimeout(timer);
+  timer=setTimeout(function(){
+    sideIcon.style.display="none";
+  },1000);
+})
