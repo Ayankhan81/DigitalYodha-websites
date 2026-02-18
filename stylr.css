@@ -255,12 +255,43 @@ nav {
   
 }
 .inclusive{
-  display: block;
-  /* justify-content: center; */
-  
+  text-align: center;
+ 
 }
-.inclusive p{
+.para{
+  font-size: 1rem;
       color:#ffb400;
+      margin-top: 2rem;
+      line-height: 0.3;
+}
+/* ------------fourth-section-------- */
+
+.fourth-section{
+  background-color: #000;
+}
+.what-we-do{
+  padding: 3rem;
+  text-align: center;
+  line-height: 2;
+}
+.what-we-do span{
+  color: #ffb400;
+
+}
+.what-we-do h1{
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.what-we-do p{
+  display: inline-block;
+  color: #b7b7b7;
+  /* margin-left: 2rem; */
+ background: linear-gradient(to right ,#302812,#5e370c,#c38903 );
+ border-radius: 15px;
+}
+
+.real-world-challenges{
+  
 }
 
 @media(max-width:710px){
@@ -362,11 +393,6 @@ footer {
   color: orange;
 }
 
-.social-icons span {
-  font-size: 20px;
-  margin-left: 15px;
-  cursor: pointer;
-}
 
 /* ==========RESPONSIVE============== */
 @media (max-width: 968px) {
