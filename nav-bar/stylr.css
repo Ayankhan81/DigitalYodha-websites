@@ -38,13 +38,10 @@ nav {
 
 .nav-links {
   display: inline-flex;
-  /* flex-direction: right; */
-  /* justify-content: space-between; */
-  /* color: #ccc; */
+  justify-content: center;
+  align-items: center;
   gap: 28px;
   position: relative;
-  /* max-height: 0; */
-  /* overflow: hidden; */
   transition: max-height 0.4s ease-in-out;
 }
 .nav-links.active {
