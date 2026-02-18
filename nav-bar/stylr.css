@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assests/background\ photo.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* ===========NAVBAR============ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 2%;
+  position: sticky;
+  top: 0;
+  background: #05070c;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ffb400;
+}
+
+.nav-links {
+  display: inline-flex;
+  /* flex-direction: right; */
+  /* justify-content: space-between; */
+  /* color: #ccc; */
+  gap: 28px;
+  position: relative;
+  /* max-height: 0; */
+  /* overflow: hidden; */
+  transition: max-height 0.4s ease-in-out;
+}
+.nav-links.active {
+  max-height: 400px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.donate-btn {
+  background: #ffb400;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+/* ==============HERO================ */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 8%;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.tagline {
+  color: #00c2ff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.2;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #00e5ff, #ffb400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: #b7b7b7;
+  margin: 20px auto;
+  max-width: 750px;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #ffb400;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 1px solid #444;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: #111;
+}
+
+/* ============FOOTER============== */
+.footer-container {
+  display: grid;
+  padding: 5%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-content: space-around;
+}
+
+/* Links */
+footer{
+    background-color: black;
+    color: white;
+}
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #0d6efd;
+}
+
+/* Newsletter */
+.newsletter p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.newsletter-box {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.newsletter-box button {
+  padding: 10px 18px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter-box button:hover {
+  background: #0b5ed7;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons span {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+
+/* ==========RESPONSIVE============== */
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu-toggle {
+    display: block;
+    padding: 0px 3%;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #05070c;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+/* ==========FOOTER=========== */
+/* Mobile */
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-box {
+    flex-direction: column;
+  }
+
+  .newsletter-box button {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
