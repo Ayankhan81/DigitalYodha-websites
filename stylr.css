@@ -260,7 +260,7 @@ nav {
 }
 .para{
   font-size: 1rem;
-      color:#ffb400;
+      color:#ffb400; 
       margin-top: 2rem;
       line-height: 0.3;
 }
@@ -291,8 +291,43 @@ nav {
 }
 
 .real-world-challenges{
-  
+    /* border: 2px solid white; */
+  background: linear-gradient(to right, #171717, #110909);
+  display: flex;
+  justify-content: center;
 }
+.safety-awareness{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 95%;
+}
+.awareness-content{
+  padding: 1.5rem;
+  height: 10rem;
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+  /* background:linear-gradient(to right , #3b3b38 , #312f21); */
+}
+.awareness-image img{
+  /* background-image: url(./assests/safety-awareness.jpg); */
+  /* background-repeat: no-repeat; */
+  height: 25rem;
+  width: 37rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-left: 2rem;
+}
+@media(max-width:870px){
+    .safety-awareness{
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+
 
 @media(max-width:710px){
     .current-parent-div{
