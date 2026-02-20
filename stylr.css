@@ -449,6 +449,11 @@ nav {
 .card-description span {
   font-size: medium;
 }
+@media (max-width: 1165px) {
+.initiative-card {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
 
 @media (max-width: 828px) {
 .initiative-card {
