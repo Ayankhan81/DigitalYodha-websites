@@ -469,6 +469,12 @@ nav {
   gap: 1rem;
   padding: 4rem;
 }
+@media (max-width: 828px) {
+.team-ox {
+    grid-template-columns: 1fr;
+  }
+}
+
 .team-box{
   border: 1px solid rgb(51, 50, 50);
   border-radius: 1rem;
@@ -479,30 +485,69 @@ nav {
   color: #b7b7b7;
 }
 .participate-feature{
-  /* border: 1px solid white; */
   padding: 4rem;
-  margin-top: 3rem;
-}
-.participate-feature h1{
-  text-align: center;
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
 }
 .all-feature{
   padding: 3.5rem;
-  border: 1px solid white;
+   border: 1px solid rgb(51, 50, 50);
   border-radius: 1rem;
+    background-color: #080d19;
+
+}
+.participate-feature h1{
+  text-align: center;
+}
+.all-feature-content {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: space-evenly; */
+  
+}
+@media (max-width: 1000px) {
+.all-feature-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+.all-feature-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+.all-feature-content {
+    grid-template-columns: 1fr;
+  }
 }
 .dot-point{
   background-color: yellow;
   border-radius: 50%;
-  height: 7px;
-  width: 7px;
+  height: 8px;
+  width: 8px;
+  margin-right: 0.2rem;
 }
-.all-feature-content {
+.voluteer{
   display: flex;
+  align-items: center;
+  
+}
+.opprtunities{
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
-
+.opprtunities a{
+  display: inline-block;
+  text-decoration: none;
+    border: 1px solid white;
+    padding: 1.5rem;
+   border-radius: 0.75rem;
+color: black;
+    background-color: grey;
+    font-size: 1rem;
+}
 
 
 
