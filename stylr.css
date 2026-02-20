@@ -437,6 +437,74 @@ nav {
   }
 }
 
+/* ================================================== */
+
+.team-section{
+  background-color: black;
+}
+.team{
+  padding:2rem ;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.team-heading{
+  padding-top: 2%;
+  text-align: center;
+}
+.team-heading h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  /* display: inline-block; */
+  border-radius: 1rem;
+  background: linear-gradient(to right, #a0c6bf, #ab7903);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+
+}
+.team-ox{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 4rem;
+}
+.team-box{
+  border: 1px solid rgb(51, 50, 50);
+  border-radius: 1rem;
+  background-color: #0f172a;
+  padding: 10%  ;
+}
+.team-box p{
+  color: #b7b7b7;
+}
+.participate-feature{
+  /* border: 1px solid white; */
+  padding: 4rem;
+  margin-top: 3rem;
+}
+.participate-feature h1{
+  text-align: center;
+  /* margin-top: 2rem; */
+}
+.all-feature{
+  padding: 3.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+.dot-point{
+  background-color: yellow;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+}
+.all-feature-content {
+  display: flex;
+}
+
+
+
+
 
 
 
