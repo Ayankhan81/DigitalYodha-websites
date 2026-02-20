@@ -335,7 +335,107 @@ nav {
   }
 }
 
+/* --------20/feb/2026 */
 
+
+.work-space-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  background-color: #000;
+  justify-items: center;
+  gap: 1rem;
+}
+.work {
+  border: 1px solid white;
+  height: 10rem;
+  width: 25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.workshop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------section initiative */
+.main-initiative {
+  background-color: black;
+  padding: 130px;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  color: white;
+  padding-bottom: 1rem;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.initiative-card {
+  /* padding: 2rem; */
+}
+.initiative-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  /* padding: 1rem; */
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 0.8rem;
+  height: fit-content;
+}
+.initiative-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.img {
+  height: 60%;
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+  /* opacity: 0.7; */
+}
+
+.card-description {
+  padding: 1rem;
+}
+
+.card-description a {
+  text-decoration: none;
+  padding-top: 3rem;
+  display: flex;
+  align-content: end;
+}
+.card-description span {
+  font-size: medium;
+}
+
+@media (max-width: 828px) {
+.initiative-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 828px) {
+.work-space-main {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
