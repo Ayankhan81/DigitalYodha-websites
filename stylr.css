@@ -341,21 +341,25 @@ nav {
 .work-space-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
+  padding: 2%;
   background-color: #000;
   justify-items: center;
-  gap: 1rem;
+  gap: 4%;
   /* width: 100%; */
 }
+
 .work {
   border: 1px solid white;
   height: 10rem;
-  width: 25rem;
+  width: 100%;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.workshop-logo i{
+  font-size: 25px;
 }
 .workshop-content {
   display: flex;
@@ -369,7 +373,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
   }
   .work{ 
-  width: 28rem;
+  width: 100%;
   }
 
 }
@@ -380,19 +384,19 @@ nav {
     justify-items: center;
   }
   .work{ 
-  width: 35rem;
+  width: 80%;
   }
 }
-@media(max-width: 642px){
+/* @media(max-width: 642px){
   .work{ 
-  width: 20rem;
+  width: 100%;
   }
-}
+} */
 
 /* ------section initiative */
 .main-initiative {
   background-color: black;
-  padding: 130px;
+  padding: 5%;
   display: flex;
   justify-content: center;
 }
@@ -458,15 +462,16 @@ nav {
 @media (max-width: 828px) {
 .initiative-card {
     grid-template-columns: 1fr;
+    padding: 0px;
+    
+  }
+  .card{
+    width: 100%;
   }
 }
 
 
-@media (max-width: 828px) {
-.work-space-main {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 /* ================================================== */
 
