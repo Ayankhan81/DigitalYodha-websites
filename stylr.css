@@ -296,23 +296,22 @@ nav {
   background: linear-gradient(to right, #171717, #110909);
   display: grid;
    grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
+  /* justify-content: center; */
 }
 .safety-awareness{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 1rem;
-  margin-top: 2rem;
-  padding: 2rem;
+  margin: 2rem 0 ;
+  padding: 2%;
   width: 100%;
 }
 .awareness-content{
-  padding: 1.5rem;
   /* height: 10rem; */
-  padding: 1.5rem;
-  border-radius: 0.7rem;
-  margin-top: 1rem;
-  border-radius: 0.7rem;
+  padding-bottom: 5%;
+  /* border-radius: 0.7rem; */
+  /* margin-top: 1rem; */
+  /* border-radius: 0.7rem; */
   /* background:linear-gradient(to right , #3b3b38 , #312f21); */
 }
 .awareness-image img{
@@ -321,19 +320,40 @@ nav {
   /* height: 25rem;
   width: 37rem; */
   width: 100%;
-  max-width: 550px;
-  height: auto;
-  border-radius: 2rem;
-  border-radius: 2rem;
-  padding: 2rem;
+  /* max-width: 550px; */
+  height: 80%;
+  /* border: 2px solid black; */
+  border-radius: 4rem 0 0 0;
+  /* border-radius: 2rem; */
+  /* padding: 2rem; */
   /* margin-left: 2rem; */
 }
 
+
+
 @media(max-width:1100px){
+  .real-world-challenges{
+    display: flex;
+    flex-direction: column;
+  }
   .safety-awareness{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    /* border: 5px solid black; */
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0 ;
+    width: 70%;
+    align-self: center;
+    box-shadow: 0 0 10px 2px wheat;
   }
+  .card-rev{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.awareness-image img{
+  border-radius: 4rem 4rem 0 0;
+}
 }
 
 /* --------20/feb/2026 */
