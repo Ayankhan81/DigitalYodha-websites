@@ -98,7 +98,7 @@ span {
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
   }
   .time-and-location {
     display: flex;
@@ -113,7 +113,7 @@ span {
   }
 }
 
-.upcoming {
+/* .upcoming { */
   /* border: 1px solid white; */
   /* display: inline-block; */
   /* transform: translateY(-400px); */
@@ -125,11 +125,11 @@ span {
   font-weight: 600;
   font-size: 1.2rem; */
   /* height: 10%; */
-}
-.upcoming span{
+/* } */
+/* .upcoming span{
   height: 10px;
   color: white;
   position: absolute;
   top: 38%;
   left: 17%;
-}
+} */
