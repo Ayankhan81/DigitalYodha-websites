@@ -4,6 +4,7 @@ let menubar=document.getElementById("workmenu")
 
 ourworkbtn.addEventListener("click", function(e){
     e.preventDefault();
+    e.stopPropagation();
     menubar.style.display=menubar.style.display==="block"?none:"block"
 
 })
