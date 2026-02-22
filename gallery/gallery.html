@@ -6,20 +6,34 @@
     <title>Digital Yodha</title>
     <link rel="stylesheet" href="./gallery.css" />
     <link rel="stylesheet" href="..//stylr.css">
+    <link rel="stylesheet" href="../our-work/cybertraining/style.css">
   </head>
   <body>
 
-    <nav>
+     <nav class="navbar">
     <div class="logo">DIGITAL <span>YODHA</span></div>
 
     <div class="menu-toggle" id="menuToggle">☰</div>
     <div class="nav-links" id="navLinks">
-      <a href="..//aboutUs/aboutus.html">About Us</a>
-      <a href="..//index.html">Home</a>
-      <a href="..//our-team page/our-team.html">Our Team</a>
-      <a href="#">Our Work</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="..//get involved/getinvolve.html">Get Involved</a>
+      <a href="../aboutUs/aboutus.html">About Us</a>
+      <a href="../index.html">Home</a>
+      <a href="../our-team page/our-team.html">Our Team</a>
+
+      <ul>
+        <li class="dropdown">
+      
+          <a href="" id="ourworkbtn" onclick="ourworkMenu()">Our Work ▾</a>
+            <ul class="dropdownmenu" id="workmenu">
+              
+                <li><a href="../our-work/our-work-project/index.html">Project</a></li>
+                <li><a href="../our-work/cybertraining/cybertraining.html">Cyber Training</a></li>
+                <li><a href="../our-work/workshops/workshop.html">Workshops</a></li>
+            
+            </ul>
+        </li>
+      </ul>
+      <a href="./gallery.html">Gallery</a>
+      <a href="../get involved/getinvolve.html">Get Involved</a>
       <a href="#">Contact</a>
       <a class="donate-btn" href="#">Donate</a>
     </div>
@@ -162,6 +176,7 @@
 
     </div>
     <script src="../script.js"></script>
+    <script src="../our-work/cybertraining/script.js"></script>
   </footer>
   </body>
 </html>

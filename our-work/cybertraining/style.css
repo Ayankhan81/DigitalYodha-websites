@@ -1,0 +1,119 @@
+.our-work{
+    background-color: black;
+}
+.work-card{
+    padding: 10%;
+     display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 1%;
+}
+.box-color{
+    padding: 1.5%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.box-1{
+    background:linear-gradient(to right, rgb(165, 158, 54), rgb(188, 126, 4));
+
+}
+.box-2{
+       background:linear-gradient(to right, rgb(48, 94, 32), rgb(3, 165, 119));
+
+}
+.box-3{
+        background:linear-gradient(to right, rgba(225, 65, 65, 0.916), rgb(48, 1, 1));
+
+}
+.cyber-safety{
+    border: 1px solid black;
+   background-color: #0f172a;
+   color: #b7b7b7;
+   border-radius: 1rem;
+
+}
+.cyber-safety-content{
+    padding: 5%;
+    margin: 2%;
+    /* height: 15rem; */
+    display: flex;
+    flex-direction: column;
+}
+.cyber-safety-content h2{
+    margin-top: 5%;
+    /* font-size: 2rem; */
+    color: white;
+}
+.cyber-safety-content li{
+    padding: 2%;
+}
+.cyber-safety-content p{
+    margin: 3%;
+    line-height: 1.3;
+}
+.cyber-safety-content a{
+    text-decoration: none;
+    color:black;
+    /* font-size: 1.4rem; */
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: none;
+    text-align: center;
+    border: 1px solid white;
+    padding: 3%;
+    border-radius: 0.5rem;
+    background-color: #b7b7b7;
+    margin-top: 8%;
+}
+.middle-box{
+    /* position: relative; */
+    /* z-index: 1; */
+    transform: translateY(-25%);
+}
+@media(max-width:1000px){
+    .work-card{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .middle-box{
+    transform: none;
+    }
+}
+@media(max-width:800px){
+    .work-card{
+        grid-template-columns: 1fr;
+       
+    }
+    .middle-box{
+    transform: none;
+
+    }
+}
+
+
+/* ------ourwork navbar-------- */
+
+.navbar ul{
+      list-style: none;  
+      display: flex;
+      gap: 0.5rem;
+}
+.dropdown{
+    position: relative;
+    /* display: none; */
+
+}
+.dropdown .dropdownmenu{
+    position: absolute;
+    top: 2.5rem;
+    background-color: #0f172a;
+    padding: 10px 0;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    width: 150px;
+    display: none;
+}
+.dropdownmenu li{
+    padding:5px 25px ;
+}
+/* 
+.dropdown:hover .dropdownmenu{
+    display: block; 
+} */
