@@ -267,12 +267,15 @@ hr{
     color: #b7b7b7;
     background-color: #151b28;
     align-items: center;
-    padding: 5%;
+    padding: 2% 5%;
     border-radius: 15px;
+    border: 0.01rem solid rgb(111, 111, 58);
 }
 
 .head5{
+    font-size: 2rem;
     padding: 1%;
+    color: white;
 }
  
 .led-gov p{
@@ -282,8 +285,23 @@ hr{
 
 .led-gov-anc{
     padding-top: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .led-gov a{
+    border: 1px solid grey;
     text-decoration: none;
+    color: white;
+    padding: 1% 2%;
+    border-radius: 10px;
+    background-color: grey;
+    color: black;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.led-gov a:hover{
+    border: 1px solid rgb(70, 70, 156);
+    background-color: rgb(45, 44, 44);
+    color: white;
 }
