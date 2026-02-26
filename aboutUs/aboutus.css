@@ -1,31 +1,35 @@
 
-
-/* who we are */
-
 .who-we-are{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 100%;
     color: #b7b7b7;
-    background-color: #0f172a;
+    /* border: 1px solid white; */
+    /* background-color: #0f172a; */
 }
 .who-we-are-content{
-    height: 100%;
-    padding: 5%;
-    width: 100%;
+    /* height: 100%; */
+    padding: 10%;
+    /* width: 100%; */
+    /* border: 2px solid white; */
+    /* background-color: #191c22; */
 }
 .para1{
-    background-color: black;
+    background-color: rgb(92, 91, 91);
     padding: 1%;
     border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    /* border: 1px solid white; */
 }
 
 .head1{
     margin: 1% 0;
+    color: white;
 }
 
 .head1 span{
-    color: blue;
+    color: rgb(186, 159, 6);
 }
 
 .who-we-are-img{
@@ -35,8 +39,17 @@
 }
 
 .who-we-are-img img{
-    height: 90%;
+    height: 95%;
     width: 100%;
+    border-radius: 0rem 2rem 0rem 2rem;
+    border: 0.1rem solid grey;
+}
+
+hr{
+    height: 1px;
+    background-color: #182030 ;
+    border: none;
+
 }
 @media(max-width:990px){
     .who-we-are{
@@ -45,7 +58,7 @@
     }
 }
 
-/* why we exist */
+/* -----------why we exist ------------*/
 
 .why-we-exist{
     display: grid;
@@ -53,7 +66,7 @@
     width: 100%;
     /* height: 100%; */
     color: #b7b7b7;
-    background-color: #151b28;
+    /* background-color: #151b28; */
     align-items: center;
 }
 
@@ -209,7 +222,7 @@
 /* Leadership & Governance */
 
 .led-gov-main{
-    background-color: #0f172a;
+    /* background-color: #0f172a; */
     padding: 5%;
 }
 
