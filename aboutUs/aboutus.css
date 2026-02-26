@@ -131,6 +131,8 @@ hr{
 .head3{
     padding: 3%;
     border-left: 5px solid rgb(3, 3, 188);
+    background-color: rgb(27, 25, 25);
+    border-radius: 0px 5px 5px 0px;
 }
 @media(max-width:990px){
     .why-we-exist{
@@ -196,7 +198,7 @@ hr{
     background-color: #151b28;
     align-items: center;
     padding: 3%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     border: 1px solid rgb(130, 129, 129);
     border-radius: 10px;
 }
