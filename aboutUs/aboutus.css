@@ -234,12 +234,20 @@ hr{
 .our-values-content-name{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 @media(max-width:800px){
     .our-values-contents{
         grid-template-columns: repeat(3,1fr);
         gap: 8%;
+    }
+}
+@media(max-width:750px){
+    .our-values-contents{
+        grid-template-columns: repeat(2,1fr);
+        gap: 8%;
+        padding-bottom: 10%;
     }
 }
 
