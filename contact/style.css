@@ -10,6 +10,7 @@ body{
 }
 .how-we-can-help {
   background-color: #0f172a;
+  border: 0.1rem solid rgb(25, 61, 34);
   padding: 3%;
   color: #b7b7b7;
   border-radius: 10px;
@@ -102,11 +103,11 @@ body{
     }
 }
 
-/* Cyber Safety Support */
+/* ================Cyber Safety Support=============== */
 
 .cyber-support{
     background: linear-gradient(135deg,#1a1f2e,#0f172a);
-    border: 1px solid #f59e0b;
+    border: 0.1rem solid #655232;
     border-radius: 20px;
     padding: 5%;
     margin: 5% 0;
@@ -131,7 +132,7 @@ body{
     background: rgba(255,255,255,0.05);
     padding: 3%;
     border-left: 4px solid #f59e0b;
-    border-radius: 10px;
+    border-radius: 0 8px 8px 0;
     margin-bottom: 3%;
     font-style: italic;
 }
@@ -149,10 +150,11 @@ body{
 
 
 
-/* For Institutions */
+/*==================== For Institutions======================== */
 
 .institutions{
     background-color: #0f172a;
+    border: 0.1rem solid rgb(31, 31, 103);
     border-radius: 20px;
     padding: 5%;
     color: #b7b7b7;
@@ -191,7 +193,7 @@ body{
 }
 
 
-/* Responsive */
+/*================== Responsive =============*/
 
 @media(max-width:900px){
 
@@ -199,12 +201,7 @@ body{
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
-}
-
-@media(max-width:600px){
-
-    .cyber-support{
+     .cyber-support{
         padding: 8%;
     }
 
