@@ -71,7 +71,7 @@ hr{
 }
 
 .why-we-exist-img{
-    height: 95%;
+    height: 90%;
     padding: 5%;
     width: 100%;
 }
@@ -79,16 +79,21 @@ hr{
 .why-we-exist-img img{
     height: 90%;
     width: 100%;
+     border-radius: 2rem 0rem 2rem 0rem;
+    border: 0.1rem solid grey;
+
 }
 
 .why-we-exist-content{
     height: 100%;
     padding: 5%;
+    margin-top: 10%;
     width: 100%;
 }
 
 .why-we-exist-content .head2{
     margin: 1% 0;
+    color: white;
 }
 
 .why-we-exist-cards{
@@ -99,12 +104,16 @@ hr{
 }
 
 .why-we-exist-card{
-    border: 1px solid black;
+    border: 1px solid rgb(50, 35, 35);
     border-radius: 10px;
-    background-color: #141313;
+    background-color: #151b28;
     align-content: center;
     padding: 3%;
-    display: inline;
+    /* display: inline; */
+
+    display: flex;
+    align-items: center;
+
 }
 
 .why-we-exist-card .points{
@@ -117,13 +126,12 @@ hr{
 }
 
 .why-we-exist-card-content {
-    padding-left: 2%;
+    padding-left: 5%;
 }
-
-.why-we-exist-content i{
-    /* padding-top: 5%; */
+.head3{
+    padding: 3%;
+    border-left: 5px solid rgb(3, 3, 188);
 }
-
 @media(max-width:990px){
     .why-we-exist{
         grid-template-columns: 1fr;
@@ -156,9 +164,21 @@ hr{
     grid-template-columns: repeat(2,1fr);
     width: 100%;
     color: #b7b7b7;
-    background-color: #0f172a;
+    /* background-color: #0f172a; */
     padding: 10%;
-    gap: 10%;
+    padding-top: 0%;
+    gap: 8%;
+    padding-bottom: 5%;
+}
+.mission ,
+.vision{
+    border: 2px solid white;
+    padding: 8%;
+    border-radius: 10px;
+    background-color: #182030;
+}
+.misAndVis h3{
+    color: white;
 }
 @media(max-width:600px){
     .misAndVis{
@@ -168,28 +188,44 @@ hr{
 }
 
 /* our values */
-
+.our-value-section{
+        padding: 0% 5% 0% 5%
+}
 .our-values{
     color: #b7b7b7;
     background-color: #151b28;
     align-items: center;
-    padding: 5%;
+    padding: 3%;
+    padding-left: 5%;
+    border: 1px solid rgb(130, 129, 129);
+    border-radius: 10px;
 }
 
 .head4{
     padding: 1%;
     font-size: 2rem;
+    color: white;
 }
 
 .our-values-contents{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     padding: 3%;
+    gap: 10px;
 }
+.our-values-content{
+    /* border: 1px solid rgb(99, 97, 97); */
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+.our-values-content:hover{
+    border: 1px solid rgb(99, 97, 97);
 
+}
 .our-values-content-icon{
     font-size: 1.3rem;
-    padding: 2%;
+    padding: 7%;
     display: flex;
     justify-content: center;
 }
