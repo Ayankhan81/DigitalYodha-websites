@@ -7,6 +7,7 @@ body{
 }
 .help-contact-card{
     padding: 10%;
+    padding-bottom: 0%;
 }
 .how-we-can-help {
   background-color: #0f172a;
@@ -209,4 +210,95 @@ body{
         padding: 8%;
     }
 
+}
+
+
+/* ==========------ Contact Section =================== */
+
+.contact-section{
+    padding: 0% 10% 10% 10%;
+}
+
+.contact-card{
+    background: linear-gradient(135deg,#0f172a,#111827);
+    /* border: 0.1rem solid red; */
+    border: 1px solid rgb(74, 22, 22);
+    border-radius: 20px;
+    padding: 5%;
+    color: #b7b7b7;
+}
+
+.contact-title{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.contact-subtitle{
+    margin: 1% 0 4% 0;
+    color: #9ca3af;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #38bdf8;
+}
+
+.form-group input,
+.form-group textarea{
+    padding: 14px;
+    background-color: #0b1220;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* .form-group input:focus,
+.form-group textarea:focus{
+    border-color: #38bdf8;
+} */
+
+.contact-btn{
+    margin-top: 10px;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(90deg,#1d7daa,#06b6d4);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover{
+    opacity: 0.5;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+    .contact-section{
+        padding: 8%;
+    }
+
+    .contact-card{
+        padding: 8%;
+    }
 }
