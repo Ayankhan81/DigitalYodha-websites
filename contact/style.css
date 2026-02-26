@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+
+}
+.help-contact-card{
+    padding: 10%;
+}
+.how-we-can-help {
+  background-color: #0f172a;
+  padding: 3%;
+  color: #b7b7b7;
+  border-radius: 10px;
+  
+}
+
+.how-we-can-help-header {
+  display: flex;
+  align-items: center;
+  /* gap: 6%; */
+}
+
+.help-head-icon {
+  background-color: #111827;
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.head6 {
+  font-size: 2rem;
+}
+
+.help-para {
+  padding: 1% 0 2% 0;
+}
+
+.how-we-can-help-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1%;
+}
+
+.help-card {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding: 2%;
+  margin-top: 2%;
+  background-color: #111827;
+  border-radius: 15px;
+  border: 1px solid #1f2937;
+}
+
+.help-icon {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+/* ==================icon colors ===================*/
+
+.blue {
+  color: #3b82f6;
+  background: #0b1e3a;
+}
+.purple {
+  color: #a855f7;
+  background: #1e123a;
+}
+.green {
+  color: #22c55e;
+  background: #0f2e1a;
+}
+.red {
+  color: #ef4444;
+  background: #3a1212;
+}
+.pink {
+  color: #ec4899;
+  background: #3a1224;
+}
+.yellow {
+  color: #facc15;
+  background: #3a2e12;
+}
+
+/*================= responsive ================== */
+
+@media (max-width: 900px) {
+  .how-we-can-help-cards {
+    grid-template-columns: 1fr;
+  }
+   .how-we-can-help{
+        padding: 8%;
+    }
+
+    .how-help-card{
+        padding: 6%;
+    }
+}
+
+/* Cyber Safety Support */
+
+.cyber-support{
+    background: linear-gradient(135deg,#1a1f2e,#0f172a);
+    border: 1px solid #f59e0b;
+    border-radius: 20px;
+    padding: 5%;
+    margin: 5% 0;
+    color: #b7b7b7;
+}
+
+.cyber-support-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cyber-support-head h2{
+    font-size: 1.8rem;
+}
+
+.cyber-support-sub{
+    margin: 2% 0;
+}
+
+.cyber-support-quote{
+    background: rgba(255,255,255,0.05);
+    padding: 3%;
+    border-left: 4px solid #f59e0b;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    font-style: italic;
+}
+
+.cyber-support-badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    font-size: 0.9rem;
+}
+
+
+
+/* For Institutions */
+
+.institutions{
+    background-color: #0f172a;
+    border-radius: 20px;
+    padding: 5%;
+    color: #b7b7b7;
+    margin-bottom: 5%;
+}
+
+.institutions-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4%;
+}
+
+.institutions-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10%;
+}
+
+.institutions-col h3{
+    color: #38bdf8;
+    margin-bottom: 3%;
+}
+
+.focus-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.focus-tags span{
+    padding: 8px 14px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .institutions-grid{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .cyber-support{
+        padding: 8%;
+    }
+
+    .institutions{
+        padding: 8%;
+    }
+
+}
